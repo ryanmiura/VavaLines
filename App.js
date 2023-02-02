@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import HomeScreen from './HomeScreen';
-import AgentScreen from './AgentScreen';
-import HomeScreenn from './HomeScreenn';
+import HomeScreen from './telas/HomeScreen';
+import AgentScreen from './telas/AgentScreen';
+import HomeScreenn from './telas/HomeScreenn';
 
 const Stack = createStackNavigator();
 
