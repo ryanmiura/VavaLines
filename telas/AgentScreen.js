@@ -11,12 +11,30 @@ const images = [
   { id: 6, source: require('../assets/agents/Phoenix.png') },
   { id: 7, source: require('../assets/agents/Raze.png') },
   { id: 8, source: require('../assets/agents/Sage.png') },
+  { id: 9, source: require('../assets/agents/Yoru.png') },
 ];
 
 const AgentScreen = ({ navigation }) => {
   const handleImagePress = (id) => {
-    // Aqui você pode navegar para outra tela usando navigation.navigate
-    navigation.navigate('Teste', { id });
+    if(id==1){
+      navigation.navigate('Maps/Brimstone', { id });
+    }else if(id==2){
+      navigation.navigate('Maps/Kayo', { id });
+    }else if(id==3){
+      navigation.navigate('Maps/Killjoy', { id });
+    }else if(id==4){
+      navigation.navigate('Maps/Sova', { id });
+    }else if(id==5){
+      navigation.navigate('Maps/Viper', { id });
+    }else if(id==6){
+      navigation.navigate('Maps/Phoenix', { id });
+    }else if(id==7){
+      navigation.navigate('Maps/Raze', { id });
+    }else if(id==8){
+      navigation.navigate('Maps/Sage', { id });
+    }else{
+      navigation.navigate('Maps/Yoru', { id });
+    }
   };
 
   return (
@@ -53,5 +71,3 @@ const styles = StyleSheet.create({
 });
 
 export default AgentScreen;
-
-
