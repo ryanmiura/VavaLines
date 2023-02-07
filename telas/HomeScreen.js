@@ -21,10 +21,9 @@ const HomeScreen = ({ navigation }) => {
             }
             style={{width:200,height:200}}
             />
-          <Text style={styles.logoText}>VavaLines</Text>
-          {/* <Text style={styles.logo2Text}>Valorant Lineups</Text> */}
+          <Text style={styles.logoText}> VavaLines</Text>
           <View style={styles.btt}>
-          <Button color={'red'} title="Começar" onPress={()=>navigation.navigate('Agents')} />
+          <Button color={'red'} title="Start Here" onPress={()=>navigation.navigate('Agents')} />
           </View>                                                                                                                                     
         </View>
         
@@ -51,19 +50,15 @@ const HomeScreen = ({ navigation }) => {
     logoText:{
       fontSize:46,
       color:'#fff',
-      fontWeight: 'bold',
+      fontWeight: '800',
       textDecorationColor: 'yellow',
       textShadowColor: 'red',
-      textShadowRadius: 20,
+      textShadowRadius: 10,
+      textShadowOffset: {width: -5, height: 5},
       marginTop:10,
 
+
     },
-    /* logo2Text:{
-      fontSize:22,
-      color:'#FFF',
-      marginTop:10,
-  }, */
-  
   });
   
   export default HomeScreen;
